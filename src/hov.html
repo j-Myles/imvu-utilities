@@ -4,12 +4,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>App</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Hidden Outfit Viewer</title>
 </head>
 <body>
     <script type="text/javascript" src="catalog_rank.js"></script>
     <div id="main">
-        <p>Hi</p>
+        <form action="javascript:;" onsubmit="setSceneProducts()">
+            Hidden Outfit Viewer:
+            <input type="text" id="hov" size="50">
+            <input type="submit" value="Unhide">
+        </form>
+    </div>
+    <div id="misc">
+        <p>Msg any errors</p>
     </div>
 </body>
 </html>
