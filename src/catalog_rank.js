@@ -83,13 +83,6 @@ function addProductHeader(isAvatar, header) {
             var avatarName = pageTitle.split('page: ')[1];
             $("#main p#" + header).append(avatarName);
         });
-        /*
-        $.get(cors_prefix + avatarLink, function(data) {
-            var pageTitle = $(data).filter("title")[0].textContent;
-            var avatarName = pageTitle.split('page: ')[1];
-            $("#main p#" + header).append(avatarName);
-        });
-        */
     } else {
         $("#main p#" + header).append(header);
     }
