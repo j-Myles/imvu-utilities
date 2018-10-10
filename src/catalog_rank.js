@@ -73,15 +73,6 @@ function addSceneProduct(header, product) {
         var linkInLine = '<a href="' + link + '">' + imgInline + '</a>'; 
         $("#main ul#" + header).append('<li>' + linkInLine + '</li>');
     });
-    /*
-    $.get(cors_prefix + productLink, function(data) {
-        var prodImg = $('#product-image', $(data)).attr("src");
-        var imgInline = '<img src="' + prodImg + '">';
-        var linkInLine = '<a href="' + productLink + '">' + imgInline + '</a>'; 
-        $("#main ul#" + header).append('<li>' + linkInLine + '</li>');
-        
-    });
-    */
 };
 
 function addProductHeader(isAvatar, header) {
