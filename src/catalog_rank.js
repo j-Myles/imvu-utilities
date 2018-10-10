@@ -68,8 +68,10 @@ function addSceneProduct(header, product) {
     $.when(getProductContent(product.split('x')[0])).done(function(content) {
         var prodImg = $('#product-image', $(content)).attr("src");
         var imgInline = '<img src="' + prodImg + '">';
-        //var linkInLine = '<a href="' + productLink + '">' + imgInline + '</a>'; 
-        $("#main ul#" + header).append('<li>' + imgInline + '</li>');
+        var metaLink = $(content).filter("meta[property='og:url']");
+        var link = metaLink.attr("content");
+        var linkInLine = '<a href="' + link + '">' + imgInline + '</a>'; 
+        $("#main ul#" + header).append('<li>' + linkInLine + '</li>');
     });
     /*
     $.get(cors_prefix + productLink, function(data) {
