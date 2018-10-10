@@ -97,11 +97,3 @@ function clearSceneProducts() {
     $("#main p").remove();
     $("#main ul").remove();
 };
-/*
-$(document).ready(function () {
-    var y = "Hi";
-    $.when(getProductContent(42240714)).done(function(content) {
-        console.log(x);
-    });
-});
-*/
