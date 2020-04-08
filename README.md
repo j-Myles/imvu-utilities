@@ -1,1 +1,1 @@
-# imvu-utilities
+# vu-ex
